@@ -1,0 +1,29 @@
+import the module 
+variable paramater 
+code( function, loop, condition, class)
+executing the code or invoking the code 
+
+function: c = a+ b  - single action  i will writing a function code 
+module  -  arthimetic module a, b , c = a + b ,  d = a - b ,  group of function put together create a module 
+        -  trigometric module
+        -  datafetching module 
+Package  - group of module put together create a package bundle ( group of activity ) - wheel format 
+
+Variables :
+1 Global Variables
+2 local variables 
+
+a = 2 -- global variable 
+print(a)
+def func1():
+     b = 2   
+    print(b)
+    print(a)
+
+
+print(b) - b is unknown or not initialized 
+print(a)
+
+
+func1()
+
