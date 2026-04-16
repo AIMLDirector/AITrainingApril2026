@@ -27,3 +27,19 @@ print(a)
 
 func1()
 
+
+Data types:
+
+1 Text type : str
+2 Numerical Type: int, float, complex
+3 Sequencial data type : list, tuples , range ---  single dimension array
+4 Set data type: set
+5 boolen data type: bool
+6 Binary data type: bytes, bytearray
+7 Mapping data type: dictionary
+
+1. int, float, str, range, list 
+2. tuple, dict, bool
+
+system coding or networking coding -- byte, bytearray, memoryview - Socket programmers (web, packet data frame)
+
