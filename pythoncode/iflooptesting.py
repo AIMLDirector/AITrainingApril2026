@@ -66,9 +66,9 @@ print("PDF files in the list with one liner:", pdf_files)
 
 # flow and logic of the program is more important than the code itself.
 
-list_user = ["admin", "root","superuser1"]
-if not any of the user in list_user user can do only read the files and view the files
-if user in list_user then they can read, write and delte the files ?
-    if user in list_user  and admin then they can read, write, delete and create the files
-    if user in list_user  and root then they can read, write and delete the files but they cannot create the files
+# list_user = ["admin", "root","superuser1"]
+# if not any of the user in list_user user can do only read the files and view the files
+# if user in list_user then they can read, write and delte the files ?
+#     if user in list_user  and admin then they can read, write, delete and create the files
+#     if user in list_user  and root then they can read, write and delete the files but they cannot create the files
 
