@@ -1,0 +1,65 @@
+1. understanding the word
+2. analyze the word
+3. evaluate the word
+4. assumption of the person 
+5. learning 
+6 assumption will come down and accuracty will improve 
+
+Ai model -- 
+
+1. less information -- more the data -- product 
+
+1 psychologly doctor -- 1970 
+    1. personality of the person --  which categorize the person ( stable state( ), unstable state( ))
+    2. behaviour analytics -- 
+    3. language (choice of word ) & what language u speak ( english, french, indian language)
+    4. emotions -- ()
+    5. decision -- what you are? 
+
+dictionary -- ( person - soft spoken, area, behaviour,food habits, words( ), country, )
+2001
+corpous  - US, UK , Asia, east country  -- human 
+2005
+Training - general corpus -- 
+2005 - 2013 
+NLTK framework  - sentimental analytics, emotion, Q & A, feedback  -- accuracy very low 
+
+i am not like this product -- negative 
+
+tag -- negative -- not, not liking, bad, worst performance , not great 
+
+solving the human problem 
+
+Ai product - End users 
+
+2013 -- text after  - chatbot -- bank - rule based chatbot 
+bad -- 
+good --
+happy
+product - 
+
+enhance the training-- neural network ( training - serial format) -- training time is very long ( 2 hours to 2 weeks)
+1 Text
+2 images
+3 video 
+
+word - emotion(sentence) - context  & meaning(documents) - understand your requiremnet 
+nltk -- genism -   Transformer --  AI model ( 20 years) -- quantum computing (2030)
+parallel trainiing with context and meaning ( Transformer) - TB  -- 2017 
+
+all the data -- trainingg and store the data in a structured format( vector) -- model 
+Testing -   coding, testing, general tech query, data engineer, infrastructure, now for everything 
+
+nltk -- genism -   Transformer ( open source - u can do that from scratch )
+
+Ai model - user of the model to solve our company use case or problem 
+
+
+1. NLTk and pandas
+2. notebook 
+3 ipykernel 
+
+
+pip install pandas notebook ipykernel nltk
+jupyter notebook 
+
