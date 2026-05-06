@@ -63,3 +63,21 @@ Ai model - user of the model to solve our company use case or problem
 pip install pandas notebook ipykernel nltk
 jupyter notebook 
 
+map our virtual environment with jupyter notebook 
+python -m ipykernel install --user --name=AITrainingApr2026 --display-name="AITrainingApr2026"
+
+Tokenization  -- splitting into words  - word tokenization , sentence tokenization 
+
+i am learning python -- i , am , learning,python 
+i am learning python. i am working on system side 
+[i am learning python, i am working on system side]
+
+Data cleanup 
+1. lower case
+2. removing the special character in the sentence
+3. remove the stop words or filler words (i, am , is, that, or , and, it )
+
+
+root word(stemming /lemmatization) 
+learning -- learn 
+python - python 

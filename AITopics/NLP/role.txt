@@ -1,0 +1,18 @@
+
+
+(Db + data engineer)+ (data anlytcis, data sciencitst) , R & D engineer -- AI engineer 
+
+system adminm network admin, storage admin , security admin , middleware admin  - product engineer 
+
+( (system - 15 , network 15 , storage),+ (firewall, security )) - product engineer /platform engineer 
+
+
+Ai engineer
+product engineer( developer- ( design, engineering, archtiect, testing , development ))
+
+product engineer - 15 years ( design, architect, product)
+product engineer - 3 - 10 years( developerment and testing)
+platform engineer 
+
+
+functional roles are dead 
