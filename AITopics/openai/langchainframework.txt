@@ -1,0 +1,22 @@
+step1   step2   step3 
+
+rule based( automatiom )
+
+Step 1 --> status ( successfull ) -> step2 (successfull)- > step3
+
+step1  -- status (failed) - terminate the activty, log the status, or mail notification 
+
+
+context based   - langchain framework ( Agent ( automation  with validation of the data , context, meaning) -- model 
+
+step1 ->(output -- context - ) ( Step2, step3, step4)
+
+step1 - > ( step2 , step3) -> (step4, step5)
+
+langchain framework to create structure( flow, integeration )
+agent framework to understand the context and decision making
+model is used to validate the data and fetch the required information 
+
+openai framework( model : gpt-5.5)
+
+langchain( agent, model , tool)

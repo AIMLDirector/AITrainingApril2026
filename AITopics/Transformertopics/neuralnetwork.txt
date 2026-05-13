@@ -1,0 +1,213 @@
+ input layer
+ hidden layer
+ output layer
+
+ input layer : 
+
+ i am learning python for the past 3 months 
+
+
+ 4 input layer 
+
+ 10 - hidden layer 
+
+ 3 output layer
+
+
+ feeding the data from the output layer back to the hidden layer is call backpropagation  -- accuracy 
+
+ Weightage
+ bias (reverse the information )
+
+ i(.1) am(0.2) learning(0.8) python(0.7)  + (-0.5)
+                        .6     .9
+  110 * .1 + 2111* 0.2 + 3123* 0.8 + 43241 * 0.7 -0.5  == 
+
+
+  learning -- 123 ( encoding)
+
+  learning -- learn -- learned, learning, leaner, skillset, knowledge studying study, 
+  learn --  learning -> learned -> leaner -- study - studying - studied - skillset , knowledge 
+  10            11          12      13          14  15 
+
+  word  into a format everyone can able to understadn is call a vector representation of data 
+
+  10 + 11+ 12 +13
+  verb
+  second postion after subject 
+  word  is convert into number( meaning, context, variation )
+  learn --  [0.1  0.2  03 
+            20    11  13
+            11    10   0.8 ]
+            
+
+encoding:  one hot encoding 
+i am learning python 
+[1 0 0 0 
+ 0 1 0 0
+ 0 0 1 0
+ 0 0 0 1]
+ 
+ encoding  - vector format 
+ . - 0 
+ , - 1
+
+ a  11
+ b 12
+ an - 39
+ as -- 
+
+ and
+
+ able
+
+
+i am learning python 
+<s>721<e>, <s>2939<e>, 37524, 422752
+<s>721<e> -- learn, learning, learned , study, studying 
+
+[]
+
+word-> token -> token + position encoding -> tagging + token + position encoding 
+-> token + position encoding + tagging + context - > vector 
+
+embedding technic -- encoding / decoding 
+
+data - embedding model ( ) -- vector -- vector db 
+
+how to work on function in python - embedding model( vector ) -- search of vector in vector db or model 
+
+match information 
+
+1  
+2
+3
+4
+5
+
+relevancy + context 
+
+1
+2
+3
+
+ranking 1
+
+display in the screen 
+
+i am learning python 
+ i - subject 
+
+i am - subject + conjunction + action verb + object --  I, IT, We , sam
+
+i (am ) learning ( swimming/sport/python )
+
+i am learning python 
+i am in 
+
+i was 
+
+end user query - 
+
+Tagging -- i (subject), we, who, whom , it --- subject
+
+image -- tagging  --
+
+wipro --  750 - google, meta  
+
+Building the model 
+
+1 NLTK -- Genism - Word2vec -- words -- model1
+2 neural network -- FNN/RNN to training the data - word, sentence - usecase( labelling) - model 
+
+challenges 1
+1 sentiment analytics model1
+2 Q & A --  model 2
+3 Text summarization  model3
+4 Text generation 
+5 image generation 
+6 image understanding  model6 
+
+challenges 2 :
+ 1. we will be training the data in the sequenetial method
+
+ challenges 3: 
+ 1 It cannot train the huge content data and it cannot understand the full context 
+
+ challenges 4:
+  there is not standard design fit for all . Everyone design the model on their own( trail and error )
+
+
+  Transformer  - 2017 
+  1 unified design configuration 
+  2 unified training
+  3 trained data can answer for multiple use case/function  ( 1 to 6 )
+  4 parallel trainging and parallel process
+  5 model published for everyone to use 
+
+2021
+  text - model1
+  Image & video - model2
+  voice & speech - model3
+
+  2024 
+  Transformer archtiecture - gpt 3.5 - text/  DALL-E -- voice/speech/image
+  gpt 5 -- model 
+
+  google 
+  gemin4 -- text  model
+  vi - 
+
+
+deepseek -  
+text/image/speech/voice/vidoe - deepseek model1 
+OCR  and live stream - model2
+
+
+
+gpt5 + data --  customer model(vynelixmodel)  - transformer archtiecture 
+
+
+
+gpt5 + data --> vector db <--  tools to search the data using that model ( gpt5 ) - RAG architecture 
+
+gpt 5 + data + automation + decision engine - Agentic AI framework 
+gpt 5 + data + automation + decision engine + autonomous agent  -- continuous running  - AI Service ( agentic AI + automous decision engine)
+
+RPA( rule based workflow )+ Data engineer( apache airflow/flink)<-- AI Service 
+
+
+Transformer archtiecture
+
+1 Encoding 
+2 Decoding 
+
+
+encoder based model 
+
+
+
+decoder based model 
+
+
+encode & decoder based model 
+
+
+encode( data) -- embedding(data to token) + multi self-attention layer + normalization -- (model1  or decoder) 
+
+decode( query) -- embedding( query to token) + multi self-attention layer(query) - feedforwader(model1 + company data) model2 or RAG( model1 + vector- db )  -- output 
+
+trained data -- model1
+embedding model -- model2 - convert data to vector 
+
+encode -- public & private( building from scracth -- what data i am going to feed)
+
+serivcenow/snowflake/microsoft/databricks/oracle
+
+public - model1 + data(embedding) -- custommodel 
+         (model1 -- data(embedding)-> vector format -- vectordb) encoder  -- (model1 - query  + vectordb)decoder  RAG archtiecture design
+
+
+Data -- data engineer ( cleanup, fine tuning ) -- dataset -- 
+
+ public dataset
