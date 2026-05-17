@@ -1,0 +1,26 @@
+langchain - framework to striching llm model, embedding model, message( system message, user messages, Ai messages), agent, tools( api, mcp, webhook), middelware( human in the loop, ), memory - invoke 
+
+Agentic Ai frameworks 
+1 langchain agent
+2 langgraph Agentic -- statful agent 
+3 deepagent 
+
+openai ADK
+google ADK
+oralce ADK
+
+langchain --> crewai -> openai ADK -> langgraph 
+model = 
+
+messages = {}
+tools [tools1, tools2, tool3]
+agent1 = create_agent( model, tools)
+
+response = []
+
+response.append(messages)
+output = agent1.invoke( messages)
+response.append(output)
+
+
+
