@@ -6,22 +6,12 @@ load_dotenv()
 from langchain.agents import create_agent, AgentState
 from langgraph.checkpoint.memory import InMemorySaver
 
-# ---------------------------------------------------
-# Custom State
-# ---------------------------------------------------
 
 class CustomAgentState(AgentState):
     user_id: str
 
-# ---------------------------------------------------
-# Memory
-# ---------------------------------------------------
-
 memory = InMemorySaver()
 
-# ---------------------------------------------------
-# Create Agent
-# ---------------------------------------------------
 
 agent = create_agent(
     model="gpt-4.1-mini",
@@ -43,9 +33,7 @@ Rules:
 """
 )
 
-# ---------------------------------------------------
-# Thread Config
-# ---------------------------------------------------
+
 
 config = {
     "configurable": {
@@ -56,9 +44,6 @@ config = {
 print("\nAI Chatbot Started")
 print("Type 'exit' to stop\n")
 
-# ---------------------------------------------------
-# Infinite Chat Loop
-# ---------------------------------------------------
 
 while True:
 
@@ -72,12 +57,7 @@ while True:
     # Invoke Agent
     response = agent.invoke(
         {
-            "messages": [
-                {
-                    "role": "user",
-                    "content": user_input
-                }
-            ],
+            "messages": [{"role": "user","content": user_input}],
             "user_id": "user_001"
         },
         config=config

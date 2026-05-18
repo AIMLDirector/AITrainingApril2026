@@ -23,4 +23,13 @@ output = agent1.invoke( messages)
 response.append(output)
 
 
+sytem prompt:
+
+1 actor role -- SME, SRE, Developer, tester, Data engineer - experience 15 years , technical person
+2 reponse format - text, json, yaml
+3. standard
+4.security standard( )
+5. negative standard( you should not expose passwords, api key , admin information, company data )
+
+
 

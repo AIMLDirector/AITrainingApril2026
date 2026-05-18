@@ -36,3 +36,5 @@ while True:
     )
 
     print(f"\nBot: {response["messages"][-1].content}\n")   
+
+
