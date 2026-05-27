@@ -1,0 +1,40 @@
+Vector db
+
+1 raw data(applications logs, system information(authentication, system, performance) , monitoring tools -logs) /db/pdf/excel/word/parke/pickle
+2 structure the data source -- unified data format - list 
+pdf, execel, raw data -- list - list1 =
+Data engineering -- yaml
+3 document - read and store -- line by line 
+4 chunk - stand size  -- list1 - ( words  - 100)  200 chunks/ 2000 words  - 1 chunk 
+    overlapping  -- 200 words
+    1 chunks = ( 0 - 2000)
+    2 chunks == ( 1800 - 3800)
+    3 chunks == ( 3600 - 5600)
+
+
+    chunk1 -> chunk2-> chunk3 -> chunk4 
+
+5 embedding model( text to vectore)  -- chunk to vectore 
+6 storing the vector data -- vectordb  -- vectore - vectore db 
+
+ cosine similary to search the data 
+
+ short term memory -- session log( in memory logs ) -- retrieve - 5questin - 100 question -- slow down your system
+ long term memory -- vector db - retrieve 
+
+context manager : -- system memory -- session log in tools level   - 4G - 100GB shared memory  - cpu or the hard disk ( parallel processing)
+tool1 ( 100 ) -> 101 -> 102 
+ context mangement - tools level
+swap memory -- 
+ tools1  - tool2 - tool3 
+  
+ tools 1-  ( tools 2 or tools3) 
+
+  tools1 to fetch the application logs --  error -- tool2 
+                                            warning -- tool3 
+
+  def tool1():
+  """ if the log in tool1 have any error informatio fillter the error the use tools2 to do the next steps
+   if the log in tool1 have any warning pass the data to tool3 or if tool3 is not responding ignore the messages
+
+

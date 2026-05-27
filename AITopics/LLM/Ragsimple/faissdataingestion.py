@@ -30,6 +30,8 @@ for loader in loaders:
 
 print(f"\nLoaded {len(documents)} raw documents")
 
+# print(documents)
+
 # -------------------------------------------------------
 # SPLIT INTO CHUNKS
 # -------------------------------------------------------
@@ -38,6 +40,8 @@ splitter = RecursiveCharacterTextSplitter(
 )
 
 chunks = splitter.split_documents(documents)
+
+print(chunks[1:10])
 
 # Clean garbage characters
 for c in chunks:

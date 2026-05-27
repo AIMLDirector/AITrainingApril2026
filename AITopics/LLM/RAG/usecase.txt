@@ -1,0 +1,18 @@
+new requirement -- onboarding 
+operation work -- day to day work ( upgrade, maintenance, troubleshooting)
+offboarding 
+
+developer :
+1 coding
+2 deployment
+3 testing 
+4 maintenance
+5 integration - db, authentication, token, api 
+
+
+ Non Technical work( end user /customer)   - AI chatbot 
+1 End user query
+2. new requirement 
+3. problem 
+
+End users Team - (who is using the product) - technical/finance/operation/HR /leadership 
