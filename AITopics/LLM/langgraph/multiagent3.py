@@ -1,6 +1,5 @@
 from typing import TypedDict
 from dotenv import load_dotenv
-from langchain_core.messages import BaseMessage
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, StateGraph
 
@@ -9,28 +8,30 @@ load_dotenv()
 llm = ChatOpenAI(model="gpt-4o-mini")
 
 
-# Define your state structure
+# Updated state to hold both outputs separately
 class AgentState(TypedDict):
     query: str
-    response: str
+    research_data: str
+    code_data: str
 
 
 def research_agent(state):
     query = state["query"]
     result = llm.invoke(f"Research this topic: {query}")
-    return {"response": result.content}
+    # Save specifically to research_data
+    return {"research_data": result.content}
 
 
 def coding_agent(state):
-    # Using the research response as context for the coder
-    context = state["response"]
+    query = state["query"]
+    research = state["research_data"]
     result = llm.invoke(
-        f"Generate python code based on this research:\n\n{context}"
+        f"Generate python code for: {query}. Use this research context: {research}"
     )
-    return {"response": result.content}
+    # Save specifically to code_data
+    return {"code_data": result.content}
 
 
-# Build the graph
 workflow = StateGraph(AgentState)
 workflow.add_node("research", research_agent)
 workflow.add_node("coding", coding_agent)
@@ -41,17 +42,21 @@ workflow.add_edge("coding", END)
 
 app = workflow.compile()
 
-# Application loop
 while True:
     user_input = input("Enter your query (or 'exit' to quit): ")
     if user_input.strip().lower() in ["exit", "quit"]:
         print("Exiting application. Goodbye!")
         break
 
-    # Run the graph
-    result = app.invoke({"query": user_input, "response": ""})
+    # Initialize the state keys
+    result = app.invoke(
+        {"query": user_input, "research_data": "", "code_data": ""}
+    )
 
-    # FIX: Access the correct key from your AgentState
-    print("\n--- Final Output ---")
-    print(result["response"])
-    print("--------------------\n")
+    # Print both responses clearly
+    print("\n================ RESEARCH AGENT ================")
+    print(result["research_data"])
+
+    print("\n================ CODING AGENT ==================")
+    print(result["code_data"])
+    print("================================================\n")
